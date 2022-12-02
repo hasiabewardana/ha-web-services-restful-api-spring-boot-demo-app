@@ -1,16 +1,17 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp.game;
 
 public class GameRunner {
-    private MarioGame marioGame;
+    // private MarioGame game;
+    private SuperContra game;
 
-    public GameRunner(MarioGame marioGame) {
-        this.marioGame = marioGame;
+    public GameRunner(SuperContra game) {
+        this.game = game;
     }
 
     public void run() {
-        marioGame.up();
-        marioGame.down();
-        marioGame.left();
-        marioGame.right();
+        game.up();
+        game.down();
+        game.left();
+        game.right();
     }
 }
