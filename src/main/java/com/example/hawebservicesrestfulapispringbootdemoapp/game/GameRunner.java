@@ -2,9 +2,10 @@ package com.example.hawebservicesrestfulapispringbootdemoapp.game;
 
 public class GameRunner {
     // private MarioGame game;
-    private SuperContra game;
+    // private SuperContra game;
+    private GamingConsole game;
 
-    public GameRunner(SuperContra game) {
+    public GameRunner(GamingConsole game) {
         this.game = game;
     }
 

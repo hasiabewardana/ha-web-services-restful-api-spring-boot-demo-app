@@ -1,8 +1,7 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp;
 
 import com.example.hawebservicesrestfulapispringbootdemoapp.game.GameRunner;
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.MarioGame;
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.SuperContra;
+import com.example.hawebservicesrestfulapispringbootdemoapp.game.PacmanGame;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -13,7 +12,8 @@ public class HaWebServicesRestfulApiSpringBootDemoAppApplication {
 
 		// Dependency is tightly coupled.
 		// MarioGame game = new MarioGame();
-		SuperContra game = new SuperContra();
+		// SuperContra game = new SuperContra();
+		PacmanGame game = new PacmanGame();
 		GameRunner gameRunner = new GameRunner(game);
 		gameRunner.run();
 	}
