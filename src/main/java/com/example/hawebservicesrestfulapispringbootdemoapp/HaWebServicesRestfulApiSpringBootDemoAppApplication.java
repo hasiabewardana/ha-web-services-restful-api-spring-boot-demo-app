@@ -2,7 +2,6 @@ package com.example.hawebservicesrestfulapispringbootdemoapp;
 
 import com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface.GameRunner;
 import com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface.PacmanGame;
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface.SuperContraGame;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
