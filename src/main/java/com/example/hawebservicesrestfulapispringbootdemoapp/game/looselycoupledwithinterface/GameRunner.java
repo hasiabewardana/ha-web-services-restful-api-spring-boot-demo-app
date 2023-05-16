@@ -1,4 +1,4 @@
-package com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface;
+package com.example.hawebservicesrestfulapispringbootdemoapp.game.looselycoupledwithinterface;
 
 public class GameRunner {
     private final GamingConsole game;
