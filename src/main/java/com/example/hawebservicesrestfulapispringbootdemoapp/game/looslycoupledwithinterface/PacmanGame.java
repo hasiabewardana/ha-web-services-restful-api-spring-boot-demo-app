@@ -1,9 +1,6 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface;
 
-import org.springframework.stereotype.Component;
-
-@Component
-public class PacmanGame implements GamingConsole{
+public class PacmanGame implements GamingConsole {
     @Override
     public void up() {
         System.out.println("PacmanGame up");

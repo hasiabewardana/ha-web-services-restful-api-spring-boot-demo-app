@@ -2,22 +2,22 @@ package com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledw
 
 public class MarioGame implements GamingConsole {
     @Override
-    public void up(){
+    public void up() {
         System.out.println("MarioGame up");
     }
 
     @Override
-    public void down(){
+    public void down() {
         System.out.println("MarioGame down");
     }
 
     @Override
-    public void left(){
+    public void left() {
         System.out.println("MarioGame left");
     }
 
     @Override
-    public void right(){
+    public void right() {
         System.out.println("MarioGame right");
     }
 }

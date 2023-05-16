@@ -1,7 +1,8 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp;
 
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.tightlycoupled.GameRunner;
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.tightlycoupled.SuperContraGame;
+import com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface.GameRunner;
+import com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface.PacmanGame;
+import com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface.SuperContraGame;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -10,9 +11,8 @@ public class HaWebServicesRestfulApiSpringBootDemoAppApplication {
     public static void main(String[] args) {
         //Dependency is tightly coupled.
         //MarioGame game = new MarioGame();
-        SuperContraGame game = new SuperContraGame();
-        //PacmanGame game = new PacmanGame();
-        //GamingConsole game = new PacmanGame();
+        //SuperContraGame game = new SuperContraGame();
+        PacmanGame game = new PacmanGame();
 
         GameRunner gameRunner = new GameRunner(game);
         gameRunner.run();
