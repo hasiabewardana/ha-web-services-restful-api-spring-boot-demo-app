@@ -1,4 +1,4 @@
-package com.example.hawebservicesrestfulapispringbootdemoapp.game;
+package com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

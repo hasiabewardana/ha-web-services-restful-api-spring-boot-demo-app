@@ -1,4 +1,4 @@
-package com.example.hawebservicesrestfulapispringbootdemoapp.game;
+package com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface;
 
 public class SuperContraGame implements GamingConsole{
     @Override

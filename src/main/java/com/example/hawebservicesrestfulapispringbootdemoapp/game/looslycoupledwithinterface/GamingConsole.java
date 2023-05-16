@@ -1,4 +1,4 @@
-package com.example.hawebservicesrestfulapispringbootdemoapp.game;
+package com.example.hawebservicesrestfulapispringbootdemoapp.game.looslycoupledwithinterface;
 
 public interface GamingConsole {
     void up();

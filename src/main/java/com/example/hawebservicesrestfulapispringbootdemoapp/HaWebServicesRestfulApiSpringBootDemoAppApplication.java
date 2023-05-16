@@ -1,28 +1,28 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp;
 
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.GameRunner;
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.GamingConsole;
-import com.example.hawebservicesrestfulapispringbootdemoapp.game.PacmanGame;
-import org.springframework.boot.SpringApplication;
+import com.example.hawebservicesrestfulapispringbootdemoapp.game.tightlycoupled.GameRunner;
+import com.example.hawebservicesrestfulapispringbootdemoapp.game.tightlycoupled.SuperContraGame;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class HaWebServicesRestfulApiSpringBootDemoAppApplication {
 
-	public static void main(String[] args) {
-		// Application context manages all beans
-		ConfigurableApplicationContext context = SpringApplication.run(HaWebServicesRestfulApiSpringBootDemoAppApplication.class, args);
+    public static void main(String[] args) {
+        //Dependency is tightly coupled.
+        //MarioGame game = new MarioGame();
+        SuperContraGame game = new SuperContraGame();
+        //PacmanGame game = new PacmanGame();
+        //GamingConsole game = new PacmanGame();
 
-		// Dependency is tightly coupled.
-		// MarioGame game = new MarioGame();
-		// SuperContra game = new SuperContra();
-		// GamingConsole game = new PacmanGame();
-		// GameRunner gameRunner = new GameRunner(game);
+        GameRunner gameRunner = new GameRunner(game);
+        gameRunner.run();
 
-		// Get bean from the Application Context
-		GameRunner gameRunner = context.getBean(GameRunner.class);
-		gameRunner.run();
-	}
+        // Application context manages all beans
+        //ConfigurableApplicationContext context = SpringApplication.run(HaWebServicesRestfulApiSpringBootDemoAppApplication.class, args);
+
+        // Get bean from the Application Context
+        //GameRunner gameRunner = context.getBean(GameRunner.class);
+        //gameRunner.run();
+    }
 
 }
