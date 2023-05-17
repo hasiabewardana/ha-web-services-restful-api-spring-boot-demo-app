@@ -19,8 +19,8 @@ public class HaWebServicesRestfulApiSpringBootDemoAppApplication {
         ConfigurableApplicationContext context = SpringApplication.run(HaWebServicesRestfulApiSpringBootDemoAppApplication.class, args);
 
         //Get bean from the Application Context
-        //GameRunner gameRunner = context.getBean(GameRunner.class);
-        //gameRunner.run();
+        GameRunner gameRunner = context.getBean(GameRunner.class);
+        gameRunner.run();
 
         //Web controller
         WebController bean = context.getBean(WebController.class);

@@ -1,8 +1,10 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp.game.looselycoupledwithspring;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class PacmanGame implements GamingConsole {
     @Override
     public void up() {
