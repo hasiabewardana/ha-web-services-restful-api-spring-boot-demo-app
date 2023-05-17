@@ -1,5 +1,6 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp;
 
+import com.example.hawebservicesrestfulapispringbootdemoapp.enterprise.example.web.WebController;
 import com.example.hawebservicesrestfulapispringbootdemoapp.game.looselycoupledwithspring.GameRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,8 +19,12 @@ public class HaWebServicesRestfulApiSpringBootDemoAppApplication {
         ConfigurableApplicationContext context = SpringApplication.run(HaWebServicesRestfulApiSpringBootDemoAppApplication.class, args);
 
         //Get bean from the Application Context
-        GameRunner gameRunner = context.getBean(GameRunner.class);
-        gameRunner.run();
+        //GameRunner gameRunner = context.getBean(GameRunner.class);
+        //gameRunner.run();
+
+        //Web controller
+        WebController bean = context.getBean(WebController.class);
+        System.out.println(bean.returnSum());
     }
 
 }
