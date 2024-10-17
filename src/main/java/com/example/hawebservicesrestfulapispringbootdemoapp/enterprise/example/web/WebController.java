@@ -6,8 +6,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class WebController {
-    @Autowired
-    private Business business;
+    private final Business business;
+
+    public WebController(Business business) {
+        this.business = business;
+    }
 
     public int returnSum() {
         return business.calculateSum();

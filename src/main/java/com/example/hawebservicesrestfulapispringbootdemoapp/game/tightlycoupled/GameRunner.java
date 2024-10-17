@@ -1,9 +1,9 @@
 package com.example.hawebservicesrestfulapispringbootdemoapp.game.tightlycoupled;
 
 public class GameRunner {
-    //private final MarioGame game;
+//    private final MarioGame game;
     private SuperContraGame game;
-    //private PacmanGame game;
+//    private PacmanGame game;
 
     public GameRunner(SuperContraGame game) {
         this.game = game;
