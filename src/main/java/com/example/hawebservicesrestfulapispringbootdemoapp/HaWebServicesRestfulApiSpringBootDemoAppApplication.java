@@ -32,8 +32,8 @@ public class HaWebServicesRestfulApiSpringBootDemoAppApplication {
         GameRunner gameRunner = context.getBean(GameRunner.class);
         gameRunner.run();*/
 
-        //Web controller
+        /*//Web controller
         WebController bean = context.getBean(WebController.class);
-        System.out.println(bean.returnSum());
+        System.out.println(bean.returnSum());*/
     }
 }
